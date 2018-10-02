@@ -1,0 +1,190 @@
+显示从最近到最远的提交日志
+
+git log
+
+如果嫌输出信息太多
+
+$ git log --pretty=oneline
+
+
+当前版本回退到上一个版本
+
+git reset
+
+命令行窗口还没有被关掉, 找到那个commit对应的数字，可以回到未来某个版本
+
+$ git reset --hard 1094a（某个你想要去的版本号）
+
+
+让HEAD指向哪个版本号，就把当前版本定位在哪，即HEAD指向的版本就是当前版本
+
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id
+
+
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+
+
+
+
+
+想恢复到新版本怎么办？找不到新版本的commit id怎么办？
+
+Git提供了一个命令git reflog用来记录你的每一次命令：
+
+$ git reflog
+
+
+撤销修改
+
+
+丢弃工作区的修改
+
+git checkout -- file
+
+如：git checkout -- readme.txt
+
+git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+
+
+
+把暂存区的修改撤销掉（unstage），重新放回工作区
+
+git reset HEAD <file>
+
+如：$ git reset HEAD readme.txt
+
+
+git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。
+
+
+当使用HEAD时，表示最新的版本
+
+
+再加上丢弃工作区的修改
+
+$ git checkout -- 文件名+文件类型
+
+
+改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，
+
+用命令git checkout -- file
+
+
+当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，
+
+分两步，第一步用命令git reset HEAD <file>
+
+
+第二步用命令git checkout -- file
+
+
+
+删除文件
+
+
+第一种方法：
+
+$ rm test.txt
+
+git rm <file>和git add<file>
+
+第二种方法：
+
+删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
+
+$ git checkout -- test.txt
+
+git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”
+
+
+创建与合并分支
+
+在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，
+
+而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
+
+一开始的时候，master分支是一条线，Git用master指向最新的提交，
+
+再用HEAD指向master，就能确定当前分支，以及当前分支的提交点
+
+
+
+创建与合并分支
+
+创建dev分支，然后切换到dev分支
+
+$ git checkout -b dev
+
+
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+
+$ git branch dev
+
+$ git checkout dev
+
+
+然后，用git branch命令查看当前分支：
+
+$ git branch
+
+
+用git branch命令查看当前分支
+
+$ git branch
+
+
+dev分支的工作完成，我们就可以切换回master分支
+
+
+$ git checkout masterdev
+
+分支的工作成果合并到master分支上
+
+
+$ git merge dev
+
+
+合并完成后，就可以放心地删除dev分支
+
+
+$ git branch -d dev
+
+查看branch，就只剩下master分支了
+
+
+$ git branch
+
+
+Git鼓励大量使用分支：
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
