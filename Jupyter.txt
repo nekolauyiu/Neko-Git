@@ -1,0 +1,72 @@
+1.python不是内部命令或外部命令，也不是可执行程序解决方案”的解决方案
+“set PATH=%PATH%;”+自己的python安装路径
+如：
+set PATH=%PATH%;
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37
+
+'pip' 不是内部或外部命令，也不是可运行的程序或批处理文件解决方案
+
+添加对应的环境变量:C:\Program Files\Python36\Scripts到Path环境变量中去,因为改路径中包含了对应的pip程序,所以这样就轻松的可以解决pip无法运行的问题了右键点击：此电脑->属性->高级系统设置->高级->环境变量->Path->修改 ,添加成功以后就可以运行了 
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts
+
+解决'python -m pip install --upgrade pip' 报错问题
+
+python -m pip install --upgrade pip
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.解决python “No module named pip”
+
+python 升级后导致不能使用原来的pip命令
+
+windows平台
+
+cmd中敲命令：python -m ensurepip
+
+得到pip的setuptools
+
+然后就可以用：easy_install pip
+
+下载相应版本的pip，最后就可以愉快的用pip命令了！
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3.安装第三方模板库发生错误：Command "python setup.py egg_info" failed with error code 1 in XXXXX
+
+Jupyter的安装和使用（windows）
+
+pip list
+
+对其中的python库文件进行查找，如果有Jupyter则不需要再次安装。
+
+如果很不幸，没有的话：
+
+pip install ipython --upgrade #升级
+
+提示：jupyter-console 5.0.2 has requirement prompt-toolkit(2.0.0)=1.0.0 but you’ll have prompt-toolkit 2.0.5 which is incompatible 
+
+Ipython 7.0.1 has requirement prompt-toolkit(2.0.0)=1.0.0 but you’ll have prompt-toolkit 2.0.5 which is incompatible 
+
+解决安装ipython报错prompt-toolkit 1.0.15 has requirement six>=1.9.0, but you'll have six 1.4.1 which is in
+
+pip install six --user –U
+
+pip install ipython --user –U
+
+再查:
+
+# pip list
+里面出现jupyter
+
+内核死用该语句处理：
+
+pip install --upgrade ipykernel
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4.快速查找Python安装路径方法:
+打开我们的cmd命令
+输入Python
+输入 import sys
+输入 print(sys.path)
+列表中的第四个将是你的安装路径
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
