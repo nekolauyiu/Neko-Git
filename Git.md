@@ -14,6 +14,18 @@ git config –global user.email “email@example.com”
 
 git init
 
+创建库所在的路径
+
+$ pwd
+
+仓库当前的状态
+
+git status
+
+上次怎么修改的
+
+git diff
+
 添加文件
 
 git add .
@@ -53,6 +65,8 @@ $ cat 文件名
 $ git remote add origin +你复制的内容
 
 比如$ git remote add origin git@github.com:Lolita-Sian/Lolita.git
+
+使用命令git push -u origin master第一次推送master分支的所有内容
 
 验证远程仓库
 
