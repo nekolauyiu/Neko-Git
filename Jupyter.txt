@@ -1,72 +1,72 @@
-1.python²»ÊÇÄÚ²¿ÃüÁî»òÍâ²¿ÃüÁî£¬Ò²²»ÊÇ¿ÉÖ´ĞĞ³ÌĞò½â¾ö·½°¸¡±µÄ½â¾ö·½°¸
-¡°set PATH=%PATH%;¡±+×Ô¼ºµÄpython°²×°Â·¾¶
-Èç£º
+1.pythonä¸æ˜¯å†…éƒ¨å‘½ä»¤æˆ–å¤–éƒ¨å‘½ä»¤ï¼Œä¹Ÿä¸æ˜¯å¯æ‰§è¡Œç¨‹åºè§£å†³æ–¹æ¡ˆâ€çš„è§£å†³æ–¹æ¡ˆ
+â€œset PATH=%PATH%;â€+è‡ªå·±çš„pythonå®‰è£…è·¯å¾„
+å¦‚ï¼š
 set PATH=%PATH%;
 C:\Users\Administrator\AppData\Local\Programs\Python\Python37
 
-'pip' ²»ÊÇÄÚ²¿»òÍâ²¿ÃüÁî£¬Ò²²»ÊÇ¿ÉÔËĞĞµÄ³ÌĞò»òÅú´¦ÀíÎÄ¼ş½â¾ö·½°¸
+'pip' ä¸æ˜¯å†…éƒ¨æˆ–å¤–éƒ¨å‘½ä»¤ï¼Œä¹Ÿä¸æ˜¯å¯è¿è¡Œçš„ç¨‹åºæˆ–æ‰¹å¤„ç†æ–‡ä»¶è§£å†³æ–¹æ¡ˆ
 
-Ìí¼Ó¶ÔÓ¦µÄ»·¾³±äÁ¿:C:\Program Files\Python36\Scriptsµ½Path»·¾³±äÁ¿ÖĞÈ¥,ÒòÎª¸ÄÂ·¾¶ÖĞ°üº¬ÁË¶ÔÓ¦µÄpip³ÌĞò,ËùÒÔÕâÑù¾ÍÇáËÉµÄ¿ÉÒÔ½â¾öpipÎŞ·¨ÔËĞĞµÄÎÊÌâÁËÓÒ¼üµã»÷£º´ËµçÄÔ->ÊôĞÔ->¸ß¼¶ÏµÍ³ÉèÖÃ->¸ß¼¶->»·¾³±äÁ¿->Path->ĞŞ¸Ä ,Ìí¼Ó³É¹¦ÒÔºó¾Í¿ÉÒÔÔËĞĞÁË 
+æ·»åŠ å¯¹åº”çš„ç¯å¢ƒå˜é‡:C:\Program Files\Python36\Scriptsåˆ°Pathç¯å¢ƒå˜é‡ä¸­å»,å› ä¸ºæ”¹è·¯å¾„ä¸­åŒ…å«äº†å¯¹åº”çš„pipç¨‹åº,æ‰€ä»¥è¿™æ ·å°±è½»æ¾çš„å¯ä»¥è§£å†³pipæ— æ³•è¿è¡Œçš„é—®é¢˜äº†å³é”®ç‚¹å‡»ï¼šæ­¤ç”µè„‘->å±æ€§->é«˜çº§ç³»ç»Ÿè®¾ç½®->é«˜çº§->ç¯å¢ƒå˜é‡->Path->ä¿®æ”¹ ,æ·»åŠ æˆåŠŸä»¥åå°±å¯ä»¥è¿è¡Œäº† 
 
 C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts
 
-½â¾ö'python -m pip install --upgrade pip' ±¨´íÎÊÌâ
+è§£å†³'python -m pip install --upgrade pip' æŠ¥é”™é—®é¢˜
 
 python -m pip install --upgrade pip
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2.½â¾öpython ¡°No module named pip¡±
+2.è§£å†³python â€œNo module named pipâ€
 
-python Éı¼¶ºóµ¼ÖÂ²»ÄÜÊ¹ÓÃÔ­À´µÄpipÃüÁî
+python å‡çº§åå¯¼è‡´ä¸èƒ½ä½¿ç”¨åŸæ¥çš„pipå‘½ä»¤
 
-windowsÆ½Ì¨
+windowså¹³å°
 
-cmdÖĞÇÃÃüÁî£ºpython -m ensurepip
+cmdä¸­æ•²å‘½ä»¤ï¼špython -m ensurepip
 
-µÃµ½pipµÄsetuptools
+å¾—åˆ°pipçš„setuptools
 
-È»ºó¾Í¿ÉÒÔÓÃ£ºeasy_install pip
+ç„¶åå°±å¯ä»¥ç”¨ï¼šeasy_install pip
 
-ÏÂÔØÏàÓ¦°æ±¾µÄpip£¬×îºó¾Í¿ÉÒÔÓä¿ìµÄÓÃpipÃüÁîÁË£¡
+ä¸‹è½½ç›¸åº”ç‰ˆæœ¬çš„pipï¼Œæœ€åå°±å¯ä»¥æ„‰å¿«çš„ç”¨pipå‘½ä»¤äº†ï¼
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-3.°²×°µÚÈı·½Ä£°å¿â·¢Éú´íÎó£ºCommand "python setup.py egg_info" failed with error code 1 in XXXXX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3.å®‰è£…ç¬¬ä¸‰æ–¹æ¨¡æ¿åº“å‘ç”Ÿé”™è¯¯ï¼šCommand "python setup.py egg_info" failed with error code 1 in XXXXX
 
-JupyterµÄ°²×°ºÍÊ¹ÓÃ£¨windows£©
+Jupyterçš„å®‰è£…å’Œä½¿ç”¨ï¼ˆwindowsï¼‰
 
 pip list
 
-¶ÔÆäÖĞµÄpython¿âÎÄ¼ş½øĞĞ²éÕÒ£¬Èç¹ûÓĞJupyterÔò²»ĞèÒªÔÙ´Î°²×°¡£
+å¯¹å…¶ä¸­çš„pythonåº“æ–‡ä»¶è¿›è¡ŒæŸ¥æ‰¾ï¼Œå¦‚æœæœ‰Jupyteråˆ™ä¸éœ€è¦å†æ¬¡å®‰è£…ã€‚
 
-Èç¹ûºÜ²»ĞÒ£¬Ã»ÓĞµÄ»°£º
+å¦‚æœå¾ˆä¸å¹¸ï¼Œæ²¡æœ‰çš„è¯ï¼š
 
-pip install ipython --upgrade #Éı¼¶
+pip install ipython --upgrade #å‡çº§
 
-ÌáÊ¾£ºjupyter-console 5.0.2 has requirement prompt-toolkit(2.0.0)=1.0.0 but you¡¯ll have prompt-toolkit 2.0.5 which is incompatible 
+æç¤ºï¼šjupyter-console 5.0.2 has requirement prompt-toolkit(2.0.0)=1.0.0 but youâ€™ll have prompt-toolkit 2.0.5 which is incompatible 
 
-Ipython 7.0.1 has requirement prompt-toolkit(2.0.0)=1.0.0 but you¡¯ll have prompt-toolkit 2.0.5 which is incompatible 
+Ipython 7.0.1 has requirement prompt-toolkit(2.0.0)=1.0.0 but youâ€™ll have prompt-toolkit 2.0.5 which is incompatible 
 
-½â¾ö°²×°ipython±¨´íprompt-toolkit 1.0.15 has requirement six>=1.9.0, but you'll have six 1.4.1 which is in
+è§£å†³å®‰è£…ipythonæŠ¥é”™prompt-toolkit 1.0.15 has requirement six>=1.9.0, but you'll have six 1.4.1 which is in
 
-pip install six --user ¨CU
+pip install six --user â€“U
 
-pip install ipython --user ¨CU
+pip install ipython --user â€“U
 
-ÔÙ²é:
+å†æŸ¥:
 
 # pip list
-ÀïÃæ³öÏÖjupyter
+é‡Œé¢å‡ºç°jupyter
 
-ÄÚºËËÀÓÃ¸ÃÓï¾ä´¦Àí£º
+å†…æ ¸æ­»ç”¨è¯¥è¯­å¥å¤„ç†ï¼š
 
 pip install --upgrade ipykernel
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-4.¿ìËÙ²éÕÒPython°²×°Â·¾¶·½·¨:
-´ò¿ªÎÒÃÇµÄcmdÃüÁî
-ÊäÈëPython
-ÊäÈë import sys
-ÊäÈë print(sys.path)
-ÁĞ±íÖĞµÄµÚËÄ¸ö½«ÊÇÄãµÄ°²×°Â·¾¶
+4.å¿«é€ŸæŸ¥æ‰¾Pythonå®‰è£…è·¯å¾„æ–¹æ³•:
+æ‰“å¼€æˆ‘ä»¬çš„cmdå‘½ä»¤
+è¾“å…¥Python
+è¾“å…¥ import sys
+è¾“å…¥ print(sys.path)
+åˆ—è¡¨ä¸­çš„ç¬¬å››ä¸ªå°†æ˜¯ä½ çš„å®‰è£…è·¯å¾„
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
