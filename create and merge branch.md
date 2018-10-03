@@ -36,6 +36,10 @@ $ git commit –m “”
 
 $ git checkout master
 
+切换回master分支后，再查看刚才修改的文件，刚才添加的内容不见了！
+
+因为那个提交是在dev分支上，而master分支此刻的提交点并没有变。
+
 把创建的分支工作成果合并到master分支上
 
 $ git merge 创建的分支名称
