@@ -37,3 +37,5 @@ $ git log
 删除分支
 
 $ git checkout –d 分支名称
+
+用git log --graph命令可以看到分支合并图
