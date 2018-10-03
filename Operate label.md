@@ -31,6 +31,7 @@ To github.com:michaelliao/learngit.git
 要看看是否真的从远程库删除了标签，可以登陆GitHub查看。
 
 小结
+
 命令git push origin <tagname>可以推送一个本地标签；
 
 命令git push origin --tags可以推送全部未推送过的本地标签；
