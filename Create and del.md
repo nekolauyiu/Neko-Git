@@ -36,3 +36,12 @@ git reset –hard id
 查看恢复的记录
 $ git reflog
 
+删除文件夹：
+$ rm -rf 目录路径
+
+如：要删除D盘目录下，neko文件夹里的venu文件夹
+
+Administrator@ICOS-20180815UJ MINGW64 /d/neko (master)
+$ rm -rf ./venv/
+
+
