@@ -48,6 +48,9 @@ $ mkdir +文件夹名字
 touch 文件名+后缀
 如：$ touch neko.py
 
+进入一个有空格的文件夹 neko ly
+如：$ cd neko\ ly/
+
 删除文件
 
 $ rm 文件名.文件类型 
