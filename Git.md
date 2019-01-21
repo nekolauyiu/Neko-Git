@@ -38,6 +38,11 @@ git commit -m "xxx"
 
 $ mkdir +文件夹名字
 
+增加一个文件
+
+touch 文件名+后缀
+如：$ touch neko.py
+
 删除文件
 
 $ rm 文件名.文件类型 
