@@ -34,6 +34,14 @@ git add .
 
 git commit -m "xxx"
 
+进入某一文件夹内
+
+$ cd neko\ ly/
+
+退出某一个文件夹(cd+空格+两个点点）
+
+$ cd ..
+
 添加文件夹
 
 $ mkdir +文件夹名字
