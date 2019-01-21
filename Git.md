@@ -38,6 +38,11 @@ git commit -m "xxx"
 
 $ mkdir +文件夹名字
 
+添加一个中间带空格的文件夹
+
+如： $ mkidr neko\ ly/
+
+
 增加一个文件
 
 touch 文件名+后缀
